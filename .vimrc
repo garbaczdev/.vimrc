@@ -1,67 +1,67 @@
-# Tab settings
+" Tab settings
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
 
-# Space as Mapleader
+" Space as Mapleader
 let mapleader = " "
 
-# Open NetRw on Space+b
+" Open NetRw on Space+b
 nnoremap <leader>b :Ex<CR>
-# Close on Space+q
+" Close on Space+q
 nnoremap <leader>q :q<CR>
-# Write on Space+w
+" Write on Space+w
 nnoremap <leader>w :w<CR>
 
-# Map Space+h/l to move between tabs
+" Map Space+h/l to move between tabs
 nnoremap <leader>h gT
 nnoremap <leader>l gt
 
-# Big jump on Space+j/k
+" Big jump on Space+j/k
 nnoremap <leader>j <C-f>
 nnoremap <leader>k <C-b>
 
-# Open new tab on Space+n
+" Open new tab on Space+n
 nnoremap <leader>n :tabnew<CR>:Ex<CR>
 
-# Terminal Actions
+" Terminal Actions
 nnoremap <leader>tc :terminal<CR>i
 nnoremap <leader>tv <C-w>v<C-w>l:terminal<CR>i
 nnoremap <leader>ts <C-w>s<C-w>j:terminal<CR>i
 
-# Do not copy the deleted text (Visual mode)
+" Do not copy the deleted text (Visual mode)
 vnoremap d "_d
 vnoremap D "_D
-# Do not copy the deleted text (Normal mode)
+" Do not copy the deleted text (Normal mode)
 nnoremap d "_d
 nnoremap D "_D
 nnoremap dd "_dd
 
-# Always paste from clipboard (Visual mode)
+" Always paste from clipboard (Visual mode)
 vnoremap p "+P
 vnoremap P "+p
-# Always paste from clipboard (Normal mode)
+" Always paste from clipboard (Normal mode)
 nnoremap p "+p
 nnoremap P "+P
 
-# Always copy to clipboard (Visual mode)
+" Always copy to clipboard (Visual mode)
 vnoremap y "+y
 vnoremap x "+x
 
-# Do not end selection after adding/removing tabs
+" Do not end selection after adding/removing tabs
 vnoremap > >gv
 vnoremap <lt> <lt>gv
 
-# Do not enter INSERT mode after adding newline
+" Do not enter INSERT mode after adding newline
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 
 
-# !!! This is necessary to exit the terminal with Escape
+" !!! This is necessary to exit the terminal with Escape
 tnoremap <Esc> <C-\><C-n>
 
-# Some remaps for Escape (Easier Access)
+" Some remaps for Escape (Easier Access)
 inoremap <C-c> <Esc>
 nnoremap <C-h> <Esc>
 inoremap <C-h> <Esc>
