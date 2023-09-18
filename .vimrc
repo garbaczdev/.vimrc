@@ -57,6 +57,8 @@ vnoremap <lt> <lt>gv
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 
+" Nice line deletions
+nnoremap K kJ
 
 " !!! This is necessary to exit the terminal with Escape
 tnoremap <Esc> <C-\><C-n>
